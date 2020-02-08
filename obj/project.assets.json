@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\EjerciciosMTWDM2020\\CoreApiAzure\\CoreApiAzure.csproj",
+      "projectUniqueName": "G:\\EjerciciosMTWDM2020\\CoreApiGitHub\\CoreApiAzure\\CoreApiAzure.csproj",
       "projectName": "CoreApiAzure",
-      "projectPath": "G:\\EjerciciosMTWDM2020\\CoreApiAzure\\CoreApiAzure.csproj",
+      "projectPath": "G:\\EjerciciosMTWDM2020\\CoreApiGitHub\\CoreApiAzure\\CoreApiAzure.csproj",
       "packagesPath": "C:\\Users\\ProBook 450 HP\\.nuget\\packages\\",
-      "outputPath": "G:\\EjerciciosMTWDM2020\\CoreApiAzure\\obj\\",
+      "outputPath": "G:\\EjerciciosMTWDM2020\\CoreApiGitHub\\CoreApiAzure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

@@ -99,3 +99,12 @@ G:\EjerciciosMTWDM2020\CoreApiGitHub\CoreApiAzure\bin\Debug\netcoreapp3.1\Micros
 G:\EjerciciosMTWDM2020\CoreApiGitHub\CoreApiAzure\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 G:\EjerciciosMTWDM2020\CoreApiGitHub\CoreApiAzure\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 G:\EjerciciosMTWDM2020\CoreApiGitHub\CoreApiAzure\obj\Debug\netcoreapp3.1\CoreApiAzure.MvcApplicationPartsAssemblyInfo.cache
+G:\EjerciciosMTWDM2020\CoreApiGitHub\CoreApiAzure\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+G:\EjerciciosMTWDM2020\CoreApiGitHub\CoreApiAzure\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+G:\EjerciciosMTWDM2020\CoreApiGitHub\CoreApiAzure\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+G:\EjerciciosMTWDM2020\CoreApiGitHub\CoreApiAzure\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+G:\EjerciciosMTWDM2020\CoreApiGitHub\CoreApiAzure\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+G:\EjerciciosMTWDM2020\CoreApiGitHub\CoreApiAzure\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+G:\EjerciciosMTWDM2020\CoreApiGitHub\CoreApiAzure\bin\Debug\netcoreapp3.1\Api.Library.dll
+G:\EjerciciosMTWDM2020\CoreApiGitHub\CoreApiAzure\bin\Debug\netcoreapp3.1\Api.Library.pdb
+G:\EjerciciosMTWDM2020\CoreApiGitHub\CoreApiAzure\obj\Debug\netcoreapp3.1\CoreApiAzure.csprojAssemblyReference.cache

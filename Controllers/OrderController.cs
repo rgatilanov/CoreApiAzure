@@ -7,10 +7,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 namespace CoreApiAzure.Controllers
 {
-    [Route("api/[controller]")]
+   
     [ApiController]
     public class OrderController : ControllerBase
     {
+        [Route("api/order/all")]
         public ActionResult<List<Order>> GetOrders()
         {
             List<Order> orders = new List<Order>();
@@ -44,6 +45,26 @@ namespace CoreApiAzure.Controllers
             });
 
             return orders;
+        }
+        [Route("api/order/{id}")]
+        public ActionResult<Order> GetOrder(string id)
+        {
+            Order order = new Models.Order()
+            {
+                OrderID = 10007,
+                OrderDate = DateTime.Now,
+                ShippedDate = DateTime.Now,
+                CustomerID = "RGAV",
+                EmployeeID = 4,
+                Freight = 6.6,
+                ShipCity = "Madrid",
+                Verified = true,
+                ShipName = "Queen Cozinha",
+                ShipCountry = "Brazil",
+                ShipAddress = "Avda. Azteca 123"
+            };
+
+            return order;
         }
 
     }

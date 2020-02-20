@@ -24,9 +24,9 @@ namespace CoreApiAzure.Controllers
 
         public ActionResult<List<User>> GetAllUsers()
         {
-            var ConnectionStringLocal = _configuration.GetValue<string>("ConnectionStringLocal");
-            //var ConnectionStringAzure = _configuration.GetValue<string>("ConnectionStringAzure");
-            using (ILogin Login = Factorizador.CrearConexionServicio(Api.Library.Models.ConnectionType.MSSQL, ConnectionStringLocal))
+            //var ConnectionStringLocal = _configuration.GetValue<string>("ConnectionStringLocal");
+            var ConnectionStringAzure = _configuration.GetValue<string>("ConnectionStringAzure");
+            using (ILogin Login = Factorizador.CrearConexionServicio(Api.Library.Models.ConnectionType.MSSQL, ConnectionStringAzure))
             {
                 List<Api.Library.Models.User> objusrs = Login.ObtenerUsers();
                 return objusrs;

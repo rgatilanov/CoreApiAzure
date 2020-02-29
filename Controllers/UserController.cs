@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
+using Api.Library.Helpers.Datos;
 using Api.Library.Interfaces;
 using Api.Library.Models;
 using CoreApiAzure.Models;
@@ -15,17 +17,21 @@ namespace CoreApiAzure.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly IConfiguration _configuration;
+        readonly IConfiguration _configuration;
+        string ConnectionStringAzure;
+        string ConnectionStringLocal;
 
         public UserController(IConfiguration configuration)
         {
             _configuration = configuration;
+            if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
+                ConnectionStringAzure = _configuration.GetConnectionString("ConnectionStringAzure");
+            else
+                ConnectionStringLocal = _configuration.GetValue<string>("ConnectionStringLocal");
         }
 
         public ActionResult<List<User>> GetAllUsers()
         {
-            //var ConnectionStringLocal = _configuration.GetValue<string>("ConnectionStringLocal");
-            var ConnectionStringAzure = _configuration.GetValue<string>("ConnectionStringAzure");
             using (ILogin Login = Factorizador.CrearConexionServicio(Api.Library.Models.ConnectionType.MSSQL, ConnectionStringAzure))
             {
                 List<Api.Library.Models.User> objusrs = Login.ObtenerUsers();

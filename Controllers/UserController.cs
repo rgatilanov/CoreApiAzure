@@ -37,6 +37,37 @@ namespace CoreApiAzure.Controllers
                 List<Api.Library.Models.User> objusrs = Login.ObtenerUsers();
                 return objusrs;
             }
+
+            #region Este código es para sacar la ip del cliente que intenta conectarse a sql server en azure
+#if false
+            List<User> users = new List<User>();
+            SqlConexion sql = new SqlConexion()
+            {
+                _conn = new SqlConnection(ConnectionStringAzure)
+            };
+
+            try
+            {
+                sql._conn.Open();
+            }
+            catch (SqlException sqlEx)
+            {
+                users.Add(new Api.Library.Models.User()
+                {
+                    Name = sqlEx.Message,
+                });
+            }
+            catch (Exception ex)
+            {
+                users.Add(new Api.Library.Models.User()
+                {
+                    Name = ex.Message,
+                });
+            }
+
+            return users;
+#endif
+            #endregion
         }
     }
 }

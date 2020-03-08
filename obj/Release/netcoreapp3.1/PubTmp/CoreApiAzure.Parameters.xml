@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="IIS Web Application Name" description="" value="apimtwdm" tags="IisApp">
+  <parameter name="IIS Web Application Name" description="" value="agaveweb" tags="IisApp">
     <parameterEntry kind="ProviderPath" scope="IisApp" match="^G:\\EjerciciosMTWDM2020\\CoreApiGitHub\\CoreApiAzure\\obj\\Release\\netcoreapp3\.1\\PubTmp\\Out\\$" />
   </parameter>
 </parameters>
